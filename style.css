@@ -1,4 +1,165 @@
+/* --google font  -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+/* --google font  -- */
+
 *{
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* -----------------------
+    header area start
+-------------------------- */
+.allsection{
+    background-color: rgb(45 37 160);
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    width: 1100px;
+}
+
+.headerarea{
+    display: grid;
+    grid-column-gap:100px ;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;   
+}
+.headerleft{
+    color: white;
+    font-size: 40px;
+}
+.hederbutton{
+    background-color: rgb(224 44 109);
+    width: 180px;
+    font-size: 19px;
+    text-align: center;
+    padding: 10px 0 ;
+    margin: 20px 0 0;
+}
+.headerright img{
+    width: 100%;
+}
+/* -----------------------
+    mainsect start
+-------------------------- */
+.mainsection{
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+.maincontain{
+    width: 950px;
+}
+.players{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 45px; ;
+    margin: 70px 0;
+}
+.player{
+    background-color: white;
+    padding: 15px 15px 30px 15px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 13px 1px;
+    margin: 15px 0;
+}
+.player h1{
+    padding: 15px 0;
+}
+.player p{
+    font-size: 14px;
+    line-height: 23.7px;
+}
+.player img{
+    width: 100%;
+}
+/*------------------
+    footer section 
+-------------------*/
+.foooter{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0 50px;
+}
+
+.social .fab{
+    font-size: 25px;
+    margin: 10px 0;
+    color: rgb(150 155 171);
+}
+.foooter img{
+    width:300px;
+}
+/* -----------
+    footer end
+  ------------ */
+  @media only screen and (max-width:688px) {
+      .allsection{
+        height: auto;
+    }
+
+    .players {   
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 45px;
+        margin: 70px 15px;
+}
+.player h1 {
+    font-size: 53px;
+}
+.player p {
+    font-size: 24px;
+    line-height: 38.7px;
+}
+.headerarea{
+    display: grid;
+    grid-column-gap: 100px;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 50px 20px 20px;
+    
+}
+.headerleft{
+    margin: 0 0 30px;
+}
+.headerright img{
+    width: 100%;
+    align-items: center;  
+}
+  }
+
+  /* -----------
+   Talate PC 
+  ------------ */
+  @media only screen and (min-width:688px) and (max-width:992px) {
+    .headerarea {
+        display: grid;
+        grid-column-gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 0 50px;
+
+    }
+    .players {   
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 45px;
+        margin: 70px 15px;
+}
+  }
