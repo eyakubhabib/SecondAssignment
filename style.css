@@ -45,6 +45,7 @@ body{
     margin: 20px 0 0;
     font-weight: 600;  
     transition: all 1s;
+    color: rgb(224 44 109);
 }
 .hederbutton a{
     text-decoration: none;
@@ -52,8 +53,14 @@ body{
 }
 .fas.fa-arrow-right{
     margin-left: 10px;
+ 
 }
-.hederbutton,a:hover{
+.hederbutton:hover{
+    background: blanchedalmond;
+    color: rgb(224 44 109);
+    transition: all 1s;
+}
+.hederbutton a:hover{
     background: blanchedalmond;
     color: rgb(224 44 109);
     transition: all 1s;
@@ -97,6 +104,28 @@ body{
 }
 .player img{
     width: 100%;
+}
+
+.extra{
+    width: 1040px;
+    display: flex;
+    justify-content: space-evenly
+}
+.extrasection{
+    height: 200px;
+    background: rgb(45 37 160);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+}
+.extra img{
+    width: 100%;
+}
+.Partners{
+
 }
 /*------------------
     footer section 
@@ -175,5 +204,8 @@ body{
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 45px;
         margin: 70px 15px;
+}
+.extra{
+    
 }
   }
